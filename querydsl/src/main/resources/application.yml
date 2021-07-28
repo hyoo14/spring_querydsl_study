@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/git/spring_querydsl_study/querydsl;
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+#        dialect: org.hibernate.dialect.Oracle10gDialect
+#        show_sql: true
+        format_sql: true
+#        default_batch_fetch_size: 100
+#    open-in-view: false
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+#    org.hibernate.type: trace
+
